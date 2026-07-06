@@ -5,21 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orgânica Delivery | Links</title>
     
-    <!-- Ícone da Aba do Navegador (Favicon) -->
     <link rel="icon" type="image/png" href="https://i.ibb.co/YBbv2Gsj/image.png">
     
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 
-    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TH8TBRML');</script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Meta Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -32,8 +26,6 @@
         fbq('init', '856953836807238');
         fbq('track', 'PageView');
     </script>
-    <!-- End Meta Pixel Code -->
-
     <style>
         /* Paleta de Cores Identidade Visual */
         :root {
@@ -132,7 +124,7 @@
             transform: scale(0.98);
         }
 
-        /* Imagens de fundo das capas definitivas atualizadas */
+        /* NOVAS IMAGENS DE FUNDO DOS CARDS */
         .card-bg {
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
@@ -141,11 +133,11 @@
             z-index: 1;
         }
 
-        .bg-1 { background-image: url('https://i.ibb.co/zv9DBFd/Banners-Organica-youtube.png'); background-color: var(--primary-color); }
-        .bg-2 { background-image: url('https://i.ibb.co/pB4jZtLf/Banners-Organica-Gest-o-ifood.png'); background-color: var(--primary-color); }
-        .bg-3 { background-image: url('https://i.ibb.co/b5PBWqYp/Banners-Organica-Whatsapp.png'); background-color: var(--primary-color); }
+        .bg-1 { background-image: url('https://i.ibb.co/bjgV4wCS/capa-atualizada-yr.png'); background-color: var(--primary-color); }
+        .bg-2 { background-image: url('https://i.ibb.co/Kck0sqc9/capa-atualizada.png'); background-color: var(--primary-color); }
+        .bg-3 { background-image: url('https://i.ibb.co/jksRt0Px/capa-atualizawp.png'); background-color: var(--primary-color); }
 
-        /* Gradiente mantido levemente para não ofuscar as novas artes, mas o suficiente para destacar o botão */
+        /* Gradiente mantido leve para não ofuscar as novas artes */
         .overlay {
             position: absolute;
             top: 0; left: 0; right: 0; bottom: 0;
@@ -175,21 +167,67 @@
             gap: 4px;
             text-transform: uppercase;
         }
+
+        /* --- SESSÃO DO CARROSSEL DE PROVA SOCIAL --- */
+        .carousel-section {
+            width: 100%;
+            max-width: 500px;
+            margin-top: 35px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .carousel-title {
+            font-size: 0.85rem;
+            color: #ffffff;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: 0.5px;
+            opacity: 0.9;
+        }
+
+        .carousel-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            /* Máscara para suavizar as bordas (fade effect) */
+            -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+            mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+        }
+
+        .carousel-track {
+            display: flex;
+            gap: 15px;
+            width: max-content;
+            /* A animação leva 15s para dar uma volta completa, de forma linear e infinita */
+            animation: scroll-logos 15s linear infinite;
+        }
+
+        .carousel-track img {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--primary-color);
+            background-color: #ffffff;
+        }
+
+        @keyframes scroll-logos {
+            0% { transform: translateX(0); }
+            /* Desloca exatamente a metade do conteúdo (que foi duplicado) para criar o loop perfeito */
+            100% { transform: translateX(calc(-50% - 7.5px)); }
+        }
         
     </style>
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TH8TBRML"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-    <!-- Meta Pixel Noscript -->
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=856953836807238&ev=PageView&noscript=1"
     /></noscript>
 
-    <!-- Seção de Perfil -->
     <div class="profile-section">
         <div class="profile-img-container">
             <img src="https://i.ibb.co/YBbv2Gsj/image.png" alt="Logo Orgânica Delivery" class="profile-img">
@@ -198,10 +236,8 @@
         <p class="profile-subtitle">Empresa focada em ajudar seu delivery a crescer de forma consistente e com método definido de qualquer lugar do Brasil</p>
     </div>
 
-    <!-- Lista de Links em Cards (Sem os títulos em HTML) -->
     <div class="links-container">
         
-        <!-- CARD 1: YOUTUBE -->
         <a href="https://www.youtube.com/@organica.delivery" class="card" target="_blank" onclick="trackClick('clique_youtube')">
             <div class="card-bg bg-1"></div>
             <div class="overlay"></div>
@@ -210,7 +246,6 @@
             </div>
         </a>
 
-        <!-- CARD 2: FORMULÁRIO -->
         <a href="https://form.respondi.app/Rxu39nGk" class="card" target="_blank" onclick="trackClick('clique_formulario')">
             <div class="card-bg bg-2"></div>
             <div class="overlay"></div>
@@ -219,7 +254,6 @@
             </div>
         </a>
 
-        <!-- CARD 3: WHATSAPP -->
         <a href="https://wa.me/554388278661?text=Ol%C3%A1%2C%20vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20falar%20com%20a%20equipe!" class="card" target="_blank" onclick="trackClick('clique_whatsapp')">
             <div class="card-bg bg-3"></div>
             <div class="overlay"></div>
@@ -230,7 +264,29 @@
 
     </div>
 
-    <!-- Script de Inteligência de Rastreamento -->
+    <div class="carousel-section">
+        <h3 class="carousel-title">Deliveries que confiam na Orgânica</h3>
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <img src="https://i.ibb.co/TM0tbBkp/logo-bey.jpg" alt="Logo Bey">
+                <img src="https://i.ibb.co/7tmwQ0XS/logo-w.jpg" alt="Logo W">
+                <img src="https://i.ibb.co/fd7wLMTH/logowq.jpg" alt="Logo WQ">
+                <img src="https://i.ibb.co/jkvcsHmk/logo.jpg" alt="Logo">
+                <img src="https://i.ibb.co/LDZWj7k1/logo-bg.jpg" alt="Logo BG">
+                <img src="https://i.ibb.co/gN7p2kH/logo-spolet.jpg" alt="Logo Spolet">
+                <img src="https://i.ibb.co/bMjMX3vF/logo-jacarre.jpg" alt="Logo Jacarre">
+                
+                <img src="https://i.ibb.co/TM0tbBkp/logo-bey.jpg" alt="Logo Bey">
+                <img src="https://i.ibb.co/7tmwQ0XS/logo-w.jpg" alt="Logo W">
+                <img src="https://i.ibb.co/fd7wLMTH/logowq.jpg" alt="Logo WQ">
+                <img src="https://i.ibb.co/jkvcsHmk/logo.jpg" alt="Logo">
+                <img src="https://i.ibb.co/LDZWj7k1/logo-bg.jpg" alt="Logo BG">
+                <img src="https://i.ibb.co/gN7p2kH/logo-spolet.jpg" alt="Logo Spolet">
+                <img src="https://i.ibb.co/bMjMX3vF/logo-jacarre.jpg" alt="Logo Jacarre">
+            </div>
+        </div>
+    </div>
+
     <script>
         function trackClick(nomeDoEvento) {
             // 1. Envia para o dataLayer do Google Tag Manager
