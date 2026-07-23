@@ -34,7 +34,7 @@
             --bg-color: #94a78a; 
             --text-color: #ffffff;
             --primary-color: #2b3b2b;
-            --secondary-color: #e4d7c0; /* Cor bege/creme da apresentação para contraste */
+            --secondary-color: #e4d7c0;
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
@@ -68,9 +68,12 @@
         .card { position: relative; display: flex; flex-direction: column; justify-content: flex-end; text-decoration: none; color: white; height: 140px; border-radius: 16px; padding: 20px; overflow: hidden; border: 2px solid var(--primary-color); transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
         .card:active { transform: scale(0.98); }
         .card-bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; background-position: center; z-index: 1; }
-        .bg-1 { background-image: url('https://i.ibb.co/bjgV4wCS/capa-atualizada-yr.png'); background-color: var(--primary-color); }
-        .bg-2 { background-image: url('https://i.ibb.co/Kck0sqc9/capa-atualizada.png'); background-color: var(--primary-color); }
-        .bg-3 { background-image: url('https://i.ibb.co/jksRt0Px/capa-atualizawp.png'); background-color: var(--primary-color); }
+        
+        /* ATUALIZAÇÃO: Novas capas dos banners inseridas aqui */
+        .bg-1 { background-image: url('https://i.ibb.co/B5CMXLSJ/image.png'); background-color: var(--primary-color); }
+        .bg-2 { background-image: url('https://i.ibb.co/Lz1qyr64/image.png'); background-color: var(--primary-color); }
+        .bg-3 { background-image: url('https://i.ibb.co/JFktfYDT/image.png'); background-color: var(--primary-color); }
+        
         .overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(15, 20, 15, 0.7) 0%, rgba(15, 20, 15, 0) 60%); z-index: 2; }
         .card-content { position: relative; z-index: 3; display: flex; flex-direction: column; align-items: flex-start; width: 100%; }
         
@@ -84,7 +87,7 @@
         .carousel-track img { width: 65px; height: 65px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-color); background-color: #ffffff; }
         @keyframes scroll-logos { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-50% - 7.5px)); } }
 
-        /* --- SESSÃO MINI-SITE (SOBRE NÓS) --- */
+        /* Sessão Mini-Site */
         .about-section {
             width: 100%;
             background-color: var(--primary-color);
@@ -113,7 +116,6 @@
             color: #ffffff;
         }
 
-        /* Grid de Fotos da Equipe */
         .team-gallery {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -129,7 +131,6 @@
             border: 2px solid var(--secondary-color);
         }
 
-        /* Texto Curto e Direto */
         .about-text {
             font-size: 0.95rem;
             line-height: 1.6;
@@ -137,7 +138,6 @@
             text-align: center;
         }
 
-        /* Lista de Benefícios (O Método) */
         .method-list {
             list-style: none;
             margin-bottom: 35px;
@@ -163,11 +163,10 @@
             color: #d1d1d1;
         }
 
-        /* Botão CTA Final */
         .btn-cta-final {
             display: block;
             width: 100%;
-            background-color: #25D366; /* Verde WhatsApp */
+            background-color: #25D366; 
             color: #000000;
             text-align: center;
             padding: 16px;
@@ -224,7 +223,7 @@
         </div>
     </div>
 
-    <!-- NOVA SESSÃO: MINI-SITE -->
+    <!-- SESSÃO: MINI-SITE -->
     <div class="about-section">
         <div class="about-content">
             <h2 class="section-title">Especialistas no seu crescimento</h2>
