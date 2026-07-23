@@ -6,14 +6,16 @@
     <title>Orgânica Delivery | Links</title>
     
     <link rel="icon" type="image/png" href="https://i.ibb.co/YBbv2Gsj/image.png">
-    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 
+    <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TH8TBRML');</script>
+    
+    <!-- Meta Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -26,20 +28,16 @@
         fbq('init', '856953836807238');
         fbq('track', 'PageView');
     </script>
+
     <style>
-        /* Paleta de Cores Identidade Visual */
         :root {
             --bg-color: #94a78a; 
             --text-color: #ffffff;
-            --primary-color: #2b3b2b; 
+            --primary-color: #2b3b2b;
+            --secondary-color: #e4d7c0; /* Cor bege/creme da apresentação para contraste */
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
 
         body {
             background-color: var(--bg-color);
@@ -48,258 +46,231 @@
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
-            padding: 40px 20px;
         }
 
-        /* Cabeçalho do Perfil */
-        .profile-section {
-            text-align: center;
-            margin-bottom: 30px;
+        /* Container Principal (Links e Perfil) */
+        .main-container {
             width: 100%;
-            max-width: 400px;
-        }
-
-        .profile-img-container {
-            width: 110px;
-            height: 110px;
-            margin: 0 auto 15px auto;
-            border-radius: 50%;
-            background-color: var(--primary-color); 
-            border: 3px solid #ffffff;
-            overflow: hidden;
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
+            padding: 40px 20px 20px 20px;
         }
 
-        .profile-img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain; 
-            transform: scale(1.1); 
-        }
+        .profile-section { text-align: center; margin-bottom: 30px; width: 100%; max-width: 400px; }
+        .profile-img-container { width: 110px; height: 110px; margin: 0 auto 15px auto; border-radius: 50%; background-color: var(--primary-color); border: 3px solid #ffffff; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+        .profile-img { width: 100%; height: 100%; object-fit: contain; transform: scale(1.1); }
+        .profile-title { font-size: 1.3rem; font-weight: 900; letter-spacing: -0.5px; color: #ffffff; }
+        .profile-subtitle { font-size: 0.9rem; font-weight: 700; color: #ffffff; margin-top: 8px; line-height: 1.4; }
 
-        .profile-title {
-            font-size: 1.3rem;
-            font-weight: 900;
-            letter-spacing: -0.5px;
-            color: #ffffff;
-        }
+        .links-container { width: 100%; max-width: 500px; display: flex; flex-direction: column; gap: 16px; }
 
-        .profile-subtitle {
-            font-size: 0.9rem;
-            font-weight: 700;
-            color: #ffffff;
-            margin-top: 8px;
-            line-height: 1.4;
-        }
-
-        /* Container dos Cards */
-        .links-container {
-            width: 100%;
-            max-width: 500px;
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-        }
-
-        /* Estilo dos Cards */
-        .card {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            text-decoration: none;
-            color: white;
-            height: 140px; 
-            border-radius: 16px;
-            padding: 20px;
-            overflow: hidden;
-            border: 2px solid var(--primary-color);
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        .card:active {
-            transform: scale(0.98);
-        }
-
-        /* NOVAS IMAGENS DE FUNDO DOS CARDS */
-        .card-bg {
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background-size: cover;
-            background-position: center;
-            z-index: 1;
-        }
-
+        .card { position: relative; display: flex; flex-direction: column; justify-content: flex-end; text-decoration: none; color: white; height: 140px; border-radius: 16px; padding: 20px; overflow: hidden; border: 2px solid var(--primary-color); transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .card:active { transform: scale(0.98); }
+        .card-bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; background-position: center; z-index: 1; }
         .bg-1 { background-image: url('https://i.ibb.co/bjgV4wCS/capa-atualizada-yr.png'); background-color: var(--primary-color); }
         .bg-2 { background-image: url('https://i.ibb.co/Kck0sqc9/capa-atualizada.png'); background-color: var(--primary-color); }
         .bg-3 { background-image: url('https://i.ibb.co/jksRt0Px/capa-atualizawp.png'); background-color: var(--primary-color); }
+        .overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(15, 20, 15, 0.7) 0%, rgba(15, 20, 15, 0) 60%); z-index: 2; }
+        .card-content { position: relative; z-index: 3; display: flex; flex-direction: column; align-items: flex-start; width: 100%; }
+        
+        .btn-acessar { align-self: flex-end; background-color: #ffffff; color: var(--primary-color); padding: 6px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: 900; display: flex; align-items: center; gap: 4px; text-transform: uppercase; }
 
-        /* Gradiente mantido leve para não ofuscar as novas artes */
-        .overlay {
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: linear-gradient(to top, rgba(15, 20, 15, 0.7) 0%, rgba(15, 20, 15, 0) 60%);
-            z-index: 2;
-        }
+        /* Carrossel */
+        .carousel-section { width: 100%; max-width: 500px; margin-top: 35px; text-align: center; overflow: hidden; }
+        .carousel-title { font-size: 0.85rem; color: #ffffff; margin-bottom: 12px; text-transform: uppercase; font-weight: 900; letter-spacing: 0.5px; opacity: 0.9; }
+        .carousel-container { width: 100%; overflow: hidden; position: relative; -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent); mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent); }
+        .carousel-track { display: flex; gap: 15px; width: max-content; animation: scroll-logos 15s linear infinite; }
+        .carousel-track img { width: 65px; height: 65px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-color); background-color: #ffffff; }
+        @keyframes scroll-logos { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-50% - 7.5px)); } }
 
-        .card-content {
-            position: relative;
-            z-index: 3;
+        /* --- SESSÃO MINI-SITE (SOBRE NÓS) --- */
+        .about-section {
+            width: 100%;
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            padding: 50px 20px;
+            margin-top: 40px;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
-        }
-
-        .btn-acessar {
-            align-self: flex-end;
-            background-color: #ffffff;
-            color: var(--primary-color);
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 900;
-            display: flex;
             align-items: center;
-            gap: 4px;
-            text-transform: uppercase;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
         }
 
-        /* --- SESSÃO DO CARROSSEL DE PROVA SOCIAL --- */
-        .carousel-section {
-            width: 100%;
+        .about-content {
             max-width: 500px;
-            margin-top: 35px;
-            text-align: center;
-            overflow: hidden;
-        }
-
-        .carousel-title {
-            font-size: 0.85rem;
-            color: #ffffff;
-            margin-bottom: 12px;
-            text-transform: uppercase;
-            font-weight: 900;
-            letter-spacing: 0.5px;
-            opacity: 0.9;
-        }
-
-        .carousel-container {
             width: 100%;
-            overflow: hidden;
-            position: relative;
-            /* Máscara para suavizar as bordas (fade effect) */
-            -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-            mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
         }
 
-        .carousel-track {
-            display: flex;
-            gap: 15px;
-            width: max-content;
-            /* A animação leva 15s para dar uma volta completa, de forma linear e infinita */
-            animation: scroll-logos 15s linear infinite;
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 25px;
+            line-height: 1.1;
+            color: #ffffff;
         }
 
-        .carousel-track img {
-            width: 65px;
-            height: 65px;
-            border-radius: 50%;
+        /* Grid de Fotos da Equipe */
+        .team-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .team-img {
+            width: 100%;
+            height: 180px;
             object-fit: cover;
-            border: 2px solid var(--primary-color);
-            background-color: #ffffff;
+            border-radius: 12px;
+            border: 2px solid var(--secondary-color);
         }
 
-        @keyframes scroll-logos {
-            0% { transform: translateX(0); }
-            /* Desloca exatamente a metade do conteúdo (que foi duplicado) para criar o loop perfeito */
-            100% { transform: translateX(calc(-50% - 7.5px)); }
+        /* Texto Curto e Direto */
+        .about-text {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            text-align: center;
         }
-        
+
+        /* Lista de Benefícios (O Método) */
+        .method-list {
+            list-style: none;
+            margin-bottom: 35px;
+        }
+
+        .method-item {
+            background-color: rgba(255,255,255,0.05);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--bg-color);
+        }
+
+        .method-title {
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 4px;
+            font-size: 1rem;
+        }
+
+        .method-desc {
+            font-size: 0.85rem;
+            color: #d1d1d1;
+        }
+
+        /* Botão CTA Final */
+        .btn-cta-final {
+            display: block;
+            width: 100%;
+            background-color: #25D366; /* Verde WhatsApp */
+            color: #000000;
+            text-align: center;
+            padding: 16px;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+        .btn-cta-final:active { transform: scale(0.98); }
+
     </style>
 </head>
 <body>
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TH8TBRML"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=856953836807238&ev=PageView&noscript=1"
-    /></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TH8TBRML" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=856953836807238&ev=PageView&noscript=1"/></noscript>
 
-    <div class="profile-section">
-        <div class="profile-img-container">
-            <img src="https://i.ibb.co/YBbv2Gsj/image.png" alt="Logo Orgânica Delivery" class="profile-img">
+    <div class="main-container">
+        <!-- Perfil -->
+        <div class="profile-section">
+            <div class="profile-img-container">
+                <img src="https://i.ibb.co/YBbv2Gsj/image.png" alt="Logo Orgânica Delivery" class="profile-img">
+            </div>
+            <h1 class="profile-title">@organica.delivery_</h1>
+            <p class="profile-subtitle">Empresa focada em ajudar seu delivery a crescer de forma consistente e com método definido de qualquer lugar do Brasil</p>
         </div>
-        <h1 class="profile-title">@organica.delivery_</h1>
-        <p class="profile-subtitle">Empresa focada em ajudar seu delivery a crescer de forma consistente e com método definido de qualquer lugar do Brasil</p>
+
+        <!-- Links -->
+        <div class="links-container">
+            <a href="https://www.youtube.com/@organica.delivery" class="card" target="_blank" onclick="trackClick('clique_youtube')">
+                <div class="card-bg bg-1"></div><div class="overlay"></div>
+                <div class="card-content"><div class="btn-acessar">Acessar &rarr;</div></div>
+            </a>
+            <a href="https://form.respondi.app/Rxu39nGk" class="card" target="_blank" onclick="trackClick('clique_formulario')">
+                <div class="card-bg bg-2"></div><div class="overlay"></div>
+                <div class="card-content"><div class="btn-acessar">Acessar &rarr;</div></div>
+            </a>
+            <a href="https://wa.me/554388278661?text=Ol%C3%A1%2C%20vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20falar%20com%20a%20equipe!" class="card" target="_blank" onclick="trackClick('clique_whatsapp')">
+                <div class="card-bg bg-3"></div><div class="overlay"></div>
+                <div class="card-content"><div class="btn-acessar">Acessar &rarr;</div></div>
+            </a>
+        </div>
+
+        <!-- Carrossel -->
+        <div class="carousel-section">
+            <h3 class="carousel-title">Deliveries que confiam na Orgânica</h3>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <img src="https://i.ibb.co/TM0tbBkp/logo-bey.jpg" alt="Logo Bey"><img src="https://i.ibb.co/7tmwQ0XS/logo-w.jpg" alt="Logo W"><img src="https://i.ibb.co/fd7wLMTH/logowq.jpg" alt="Logo WQ"><img src="https://i.ibb.co/jkvcsHmk/logo.jpg" alt="Logo"><img src="https://i.ibb.co/LDZWj7k1/logo-bg.jpg" alt="Logo BG"><img src="https://i.ibb.co/gN7p2kH/logo-spolet.jpg" alt="Logo Spolet"><img src="https://i.ibb.co/bMjMX3vF/logo-jacarre.jpg" alt="Logo Jacarre">
+                    <img src="https://i.ibb.co/TM0tbBkp/logo-bey.jpg" alt="Logo Bey"><img src="https://i.ibb.co/7tmwQ0XS/logo-w.jpg" alt="Logo W"><img src="https://i.ibb.co/fd7wLMTH/logowq.jpg" alt="Logo WQ"><img src="https://i.ibb.co/jkvcsHmk/logo.jpg" alt="Logo"><img src="https://i.ibb.co/LDZWj7k1/logo-bg.jpg" alt="Logo BG"><img src="https://i.ibb.co/gN7p2kH/logo-spolet.jpg" alt="Logo Spolet"><img src="https://i.ibb.co/bMjMX3vF/logo-jacarre.jpg" alt="Logo Jacarre">
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="links-container">
-        
-        <a href="https://www.youtube.com/@organica.delivery" class="card" target="_blank" onclick="trackClick('clique_youtube')">
-            <div class="card-bg bg-1"></div>
-            <div class="overlay"></div>
-            <div class="card-content">
-                <div class="btn-acessar">Acessar &rarr;</div>
+    <!-- NOVA SESSÃO: MINI-SITE -->
+    <div class="about-section">
+        <div class="about-content">
+            <h2 class="section-title">Especialistas no seu crescimento</h2>
+            
+            <div class="team-gallery">
+                <img src="https://i.ibb.co/RptCbH7j/image.png" alt="Equipe Orgânica" class="team-img">
+                <img src="https://i.ibb.co/SwHwqP9L/image.png" alt="Reunião com Cliente" class="team-img">
             </div>
-        </a>
 
-        <a href="https://form.respondi.app/Rxu39nGk" class="card" target="_blank" onclick="trackClick('clique_formulario')">
-            <div class="card-bg bg-2"></div>
-            <div class="overlay"></div>
-            <div class="card-content">
-                <div class="btn-acessar">Acessar &rarr;</div>
-            </div>
-        </a>
+            <p class="about-text">
+                Não somos apenas consultores. Somos parceiros focados na <strong>gestão de excelência no iFood</strong>. Nossa cultura é o overdelivery: entregamos estratégia, inteligência e proximidade para escalar o seu negócio.
+            </p>
 
-        <a href="https://wa.me/554388278661?text=Ol%C3%A1%2C%20vim%20pelo%20link%20da%20bio%20e%20gostaria%20de%20falar%20com%20a%20equipe!" class="card" target="_blank" onclick="trackClick('clique_whatsapp')">
-            <div class="card-bg bg-3"></div>
-            <div class="overlay"></div>
-            <div class="card-content">
-                <div class="btn-acessar">Acessar &rarr;</div>
-            </div>
-        </a>
+            <ul class="method-list">
+                <li class="method-item">
+                    <div class="method-title">1. Diagnóstico e Onboarding</div>
+                    <div class="method-desc">Mapeamos as oportunidades do seu negócio e desenhamos um plano de ação sob medida.</div>
+                </li>
+                <li class="method-item">
+                    <div class="method-title">2. Estruturação de Cardápio</div>
+                    <div class="method-desc">Engenharia de menu aplicada para aumentar a conversão e o ticket médio da sua loja.</div>
+                </li>
+                <li class="method-item">
+                    <div class="method-title">3. Monitoramento e Escala</div>
+                    <div class="method-desc">Acompanhamento contínuo de resultados, marketing e experiência do cliente. Tudo focado em lucro.</div>
+                </li>
+            </ul>
 
-    </div>
-
-    <div class="carousel-section">
-        <h3 class="carousel-title">Deliveries que confiam na Orgânica</h3>
-        <div class="carousel-container">
-            <div class="carousel-track">
-                <img src="https://i.ibb.co/TM0tbBkp/logo-bey.jpg" alt="Logo Bey">
-                <img src="https://i.ibb.co/7tmwQ0XS/logo-w.jpg" alt="Logo W">
-                <img src="https://i.ibb.co/fd7wLMTH/logowq.jpg" alt="Logo WQ">
-                <img src="https://i.ibb.co/jkvcsHmk/logo.jpg" alt="Logo">
-                <img src="https://i.ibb.co/LDZWj7k1/logo-bg.jpg" alt="Logo BG">
-                <img src="https://i.ibb.co/gN7p2kH/logo-spolet.jpg" alt="Logo Spolet">
-                <img src="https://i.ibb.co/bMjMX3vF/logo-jacarre.jpg" alt="Logo Jacarre">
-                
-                <img src="https://i.ibb.co/TM0tbBkp/logo-bey.jpg" alt="Logo Bey">
-                <img src="https://i.ibb.co/7tmwQ0XS/logo-w.jpg" alt="Logo W">
-                <img src="https://i.ibb.co/fd7wLMTH/logowq.jpg" alt="Logo WQ">
-                <img src="https://i.ibb.co/jkvcsHmk/logo.jpg" alt="Logo">
-                <img src="https://i.ibb.co/LDZWj7k1/logo-bg.jpg" alt="Logo BG">
-                <img src="https://i.ibb.co/gN7p2kH/logo-spolet.jpg" alt="Logo Spolet">
-                <img src="https://i.ibb.co/bMjMX3vF/logo-jacarre.jpg" alt="Logo Jacarre">
-            </div>
+            <!-- Botão com Rastreamento Mantido -->
+            <a href="https://wa.me/554388278661?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20gest%C3%A3o!" 
+               class="btn-cta-final" 
+               target="_blank" 
+               onclick="trackClick('clique_whatsapp')">
+                Quero escalar meu delivery
+            </a>
         </div>
     </div>
 
     <script>
         function trackClick(nomeDoEvento) {
-            // 1. Envia para o dataLayer do Google Tag Manager
             window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({
-                'event': nomeDoEvento
-            });
+            window.dataLayer.push({ 'event': nomeDoEvento });
             
-            // 2. Envia como evento customizado para o Meta Pixel
             if (typeof fbq === 'function') {
                 fbq('trackCustom', nomeDoEvento);
             }
-
             console.log("Rastreamento Rocket executado para: " + nomeDoEvento);
         }
     </script>
