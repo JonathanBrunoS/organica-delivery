@@ -52,35 +52,49 @@
         }
 
         .main-container { width: 100%; display: flex; flex-direction: column; align-items: center; padding: 40px 20px 20px 20px; }
+        
+        /* Perfil */
         .profile-section { text-align: center; margin-bottom: 30px; width: 100%; max-width: 400px; }
         .profile-img-container { width: 110px; height: 110px; margin: 0 auto 15px auto; border-radius: 50%; background-color: var(--primary-color); border: 3px solid #ffffff; overflow: hidden; display: flex; align-items: center; justify-content: center; }
         .profile-img { width: 100%; height: 100%; object-fit: contain; transform: scale(1.1); }
         .profile-title { font-size: 1.3rem; font-weight: 900; letter-spacing: -0.5px; color: #ffffff; }
         .profile-subtitle { font-size: 0.9rem; font-weight: 700; color: #ffffff; margin-top: 8px; line-height: 1.4; }
 
-        .links-container { width: 100%; max-width: 500px; display: flex; flex-direction: column; gap: 16px; }
+        /* Botões Minimalistas */
+        .links-container { width: 100%; max-width: 500px; display: flex; flex-direction: column; gap: 14px; }
+        
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #ffffff;
+            color: var(--primary-color);
+            padding: 18px 20px;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 800;
+            text-align: center;
+            text-decoration: none;
+            border: 2px solid var(--primary-color);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .link-btn:active {
+            transform: scale(0.98);
+            box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+        }
 
-        .card { position: relative; display: flex; flex-direction: column; justify-content: flex-end; text-decoration: none; color: white; height: 140px; border-radius: 16px; padding: 20px; overflow: hidden; border: 2px solid var(--primary-color); transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .card:active { transform: scale(0.98); }
-        .card-bg { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; background-position: center; z-index: 1; }
-        
-        .bg-1 { background-image: url('https://i.ibb.co/B5CMXLSJ/image.png'); background-color: var(--primary-color); }
-        .bg-2 { background-image: url('https://i.ibb.co/Lz1qyr64/image.png'); background-color: var(--primary-color); }
-        /* IMAGEM DO BANNER WHATSAPP ATUALIZADA AQUI */
-        .bg-3 { background-image: url('https://i.ibb.co/BHWn2RPg/image.png'); background-color: var(--primary-color); }
-        
-        .overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to top, rgba(15, 20, 15, 0.7) 0%, rgba(15, 20, 15, 0) 60%); z-index: 2; }
-        .card-content { position: relative; z-index: 3; display: flex; flex-direction: column; align-items: flex-start; width: 100%; }
-        
-        .btn-acessar { align-self: flex-end; background-color: #ffffff; color: var(--primary-color); padding: 6px 16px; border-radius: 20px; font-size: 0.8rem; font-weight: 900; display: flex; align-items: center; gap: 4px; text-transform: uppercase; }
-
-        .carousel-section { width: 100%; max-width: 500px; margin-top: 35px; text-align: center; overflow: hidden; }
+        /* Carrossel */
+        .carousel-section { width: 100%; max-width: 500px; margin-top: 40px; text-align: center; overflow: hidden; }
         .carousel-title { font-size: 0.85rem; color: #ffffff; margin-bottom: 12px; text-transform: uppercase; font-weight: 900; letter-spacing: 0.5px; opacity: 0.9; }
         .carousel-container { width: 100%; overflow: hidden; position: relative; -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent); mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent); }
         .carousel-track { display: flex; gap: 15px; width: max-content; animation: scroll-logos 15s linear infinite; }
         .carousel-track img { width: 65px; height: 65px; border-radius: 50%; object-fit: cover; border: 2px solid var(--primary-color); background-color: #ffffff; }
         @keyframes scroll-logos { 0% { transform: translateX(0); } 100% { transform: translateX(calc(-50% - 7.5px)); } }
 
+        /* Sessão Mini-Site */
         .about-section { width: 100%; background-color: var(--primary-color); color: var(--secondary-color); padding: 50px 20px; margin-top: 40px; display: flex; flex-direction: column; align-items: center; border-top-left-radius: 30px; border-top-right-radius: 30px; }
         .about-content { max-width: 500px; width: 100%; }
         .section-title { font-size: 1.6rem; font-weight: 900; text-transform: uppercase; text-align: center; margin-bottom: 25px; line-height: 1.1; color: #ffffff; }
@@ -111,21 +125,29 @@
             <p class="profile-subtitle">Empresa focada em ajudar seu delivery a crescer de forma consistente e com método definido de qualquer lugar do Brasil</p>
         </div>
 
-        <!-- Links -->
+        <!-- Links em Botões Minimalistas -->
         <div class="links-container">
-            <a href="https://www.youtube.com/@organica.delivery" class="card" target="_blank" onclick="trackClick('clique_youtube')">
-                <div class="card-bg bg-1"></div><div class="overlay"></div>
-                <div class="card-content"><div class="btn-acessar">Acessar &rarr;</div></div>
+            
+            <a href="https://www.fluxengestao.com.br" class="link-btn" target="_blank" onclick="trackClick('clique_calculadora')">
+                Calculadora de preços iFood
             </a>
-            <a href="https://form.respondi.app/Rxu39nGk" class="card" target="_blank" onclick="trackClick('clique_formulario')">
-                <div class="card-bg bg-2"></div><div class="overlay"></div>
-                <div class="card-content"><div class="btn-acessar">Acessar &rarr;</div></div>
+            
+            <a href="https://form.respondi.app/Rxu39nGk" class="link-btn" target="_blank" onclick="trackClick('clique_formulario')">
+                Faça um diagnóstico do seu iFood
             </a>
-            <!-- LINK WHATSAPP -->
-            <a href="https://wa.me/554388278661?text=Ol%C3%A1%2C%20vim%20pelo%20Instagram%20e%20queria%20um%20or%C3%A7amento%20pra%20fazer%20um%20diagn%C3%B3stico%20da%20minha%20loja" class="card" target="_blank" onclick="trackClick('clique_whatsapp')">
-                <div class="card-bg bg-3"></div><div class="overlay"></div>
-                <div class="card-content"><div class="btn-acessar">Pedir Diagnóstico &rarr;</div></div>
+            
+            <a href="https://wa.me/554388278661?text=Ol%C3%A1%2C%20vim%20pelo%20Instagram%20e%20queria%20um%20or%C3%A7amento%20pra%20fazer%20um%20diagn%C3%B3stico%20da%20minha%20loja" class="link-btn" target="_blank" onclick="trackClick('clique_whatsapp')">
+                Fazer gestão de iFood com a Orgânica
             </a>
+
+            <a href="https://open.spotify.com/show/7rWmr4GbJeq4yMYykLDsNt?si=HBs48caTRQmGYs7rEdQthw&utm_source=copy-link" class="link-btn" target="_blank" onclick="trackClick('clique_podcast')">
+                Podcast: Além da Comanda
+            </a>
+
+            <a href="https://www.youtube.com/@organica.delivery" class="link-btn" target="_blank" onclick="trackClick('clique_youtube')">
+                Canal do YouTube
+            </a>
+
         </div>
 
         <!-- Carrossel -->
@@ -169,7 +191,6 @@
                 </li>
             </ul>
 
-            <!-- LINK WHATSAPP BOTÃO FINAL -->
             <a href="https://wa.me/554388278661?text=Ol%C3%A1%2C%20vim%20pelo%20Instagram%20e%20queria%20um%20or%C3%A7amento%20pra%20fazer%20um%20diagn%C3%B3stico%20da%20minha%20loja" 
                class="btn-cta-final" 
                target="_blank" 
